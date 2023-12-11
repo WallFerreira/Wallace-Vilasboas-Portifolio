@@ -30,7 +30,7 @@ h2.titulo span {
 }
 
 .btn-contato button {
-    padding: 10px 40px;
+    padding: 20px 40px;
     font-size: 18px;
     font-weight: 600;
     background-color: #9ef801;
@@ -39,7 +39,7 @@ h2.titulo span {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #9ef801;
     border: 0;
     transform: scale(1.05);
@@ -269,4 +269,56 @@ section.projetos .flex{
 
 .overlay:hover{
     opacity: 1;
+}
+
+/*  Formulário de contato --------------------------------------------------------------------------*/
+
+section .formulario{
+    padding: 80px 4%;
+}
+
+.formulario h2{
+    margin-top: 80px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: vertical;
+    height: 180px;
+    max-height: 800px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #9ef801;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .2s;
 }
