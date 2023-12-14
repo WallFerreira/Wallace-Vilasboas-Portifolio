@@ -14,6 +14,8 @@
     <!-- Bootstrap-itens -->
     <link rel="stylesheet" href="style.css">
     <title>Portifólio Wallace Vilasboas Ferreira</title>
+
+    <script src="menu.js" defer></script>
 </head>
 
 <body>
@@ -21,37 +23,68 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="./images/Logo perfil Front.svg" alt="Logo Wallace front">
+                    <img class="img-header" src="./images/Logo perfil Front.svg" alt="Logo Wallace front">
                 </a>
             </div><!--Logo  -->
 
             <nav class="menu-desktop">
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="#topo-do-site">Início</a>
                     </li>
                     <li>
-                        <a href="#">Especialidades</a>
+                        <a href="#especialidades">Especialidades</a>
                     </li>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </nav>
+
             <div class="btn-social topo-icon">
                 <a href="https://www.linkedin.com/in/wallace-vilasboas-ferreira-2b302785/" target="_blank"><button><i
                             class="bi bi-linkedin"></i></button></a>
                 <a href="https://github.com/WallFerreira" target="_blank"><button><i
                             class="bi bi-github"></i></button></a>
+            </div> <!-- btn-social topo-icon-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#topo-do-site">Início</a>
+                        </li>
+                        <li>
+                            <a href="#especialidades">Especialidades</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5511957914122" target="_blank">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface -->
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -72,7 +105,7 @@
             </div><!--interface -->
         </section><!--topo-do-site -->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades" >
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -103,7 +136,7 @@
             </div><!--interface -->
         </section><!--especialidades -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <img class="img-sobre" src="./images/Wallace - parede.png" alt="">
@@ -130,7 +163,7 @@
             </div><!--interface -->
         </section><!--sobre -->
 
-        <section class="projetos">
+        <section class="projetos" id="projetos"> 
             <div class="interface">
                 <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
