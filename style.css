@@ -98,6 +98,10 @@ header nav.menu-desktop ul li {
     padding: 0 40px;
 }
 
+header .menu-desktop a{
+    font-weight: bolder;
+}
+
 /*  ESTILO DO MENU MOBILE -----------------------------------------------------------------------------*/
 
 .btn-abrir-menu i {
@@ -473,6 +477,7 @@ footer .line-footer p a {
     .topo-icon {
         display: none;
     }
+    
 
     img.img-header {
         width: 200px;
