@@ -22,7 +22,6 @@ revelar.reveal('.efeito-img-topo',{
 revelar.reveal('.titulo',{
     duration: 2000,
     distance: '90px',
-    scale: 2
 });
 
 // ESPECIALIDADES ========================================================
@@ -54,14 +53,14 @@ revelar.reveal('.efeito-especialidades3',{
 revelar.reveal('.img-sobre', { 
     duration: 2000,
     distance: '90px',
-    origin: 'rigth',
+    origin: 'left',
     delay: 500
 });
 
 revelar.reveal('.txt-sobre', { 
     duration: 2000,
     distance: '90px',
-    origin: 'left',
+    origin: 'right',
     delay: 1000
 });
 
@@ -79,14 +78,14 @@ revelar.reveal('.projeto1',{
 revelar.reveal('.projeto2',{
     duration: 2000,
     distance: '90px',
-    origin: 'top',
+    origin: 'left',
     delay: 1000
 });
 
 revelar.reveal('.projeto3',{
     duration: 2000,
     distance: '90px',
-    origin: 'rigth',
+    origin: 'left',
     delay: 500
 });
 
@@ -130,6 +129,5 @@ revelar.reveal('.btn-enviar',{
         x: 0,
         y:180
     },
-    easing: 'ease-in'
 });
 
