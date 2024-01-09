@@ -350,7 +350,13 @@ section.projetos .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+
 }
+
+.projetos .img-port a {
+    text-decoration: none;
+}
+
 
 
 .img-port:hover {
