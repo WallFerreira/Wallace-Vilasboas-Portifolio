@@ -321,7 +321,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre p {
     margin: 20px 0;
-    text-align: justify;
+    text-align: start
 }
 
 
@@ -332,7 +332,6 @@ section.sobre .flex {
 }
 
 /*  ESTILO DOS PROJETOS --------------------------------------------------------------------------*/
-
 section.projetos {
     margin-top: 180px;
     padding: 80px 4%;
@@ -340,26 +339,46 @@ section.projetos {
 }
 
 section.projetos .flex {
-    justify-content: space-around;
+    display: grid;
     margin-top: 60px;
+    gap: 50px;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+    @media(max-width: 1236px) {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
 }
+
 
 .img-port {
     width: 360px;
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 10s;
+    transition: 6s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    object-fit: contain;
+    justify-content: center;
+    align-self: center;
+    background-position: center;
+
+    @media(max-width: 1236px) {
+
+        background-position: 100% 0%;
+        transition: 1s;
+    }
 
 }
 
 .projetos .img-port a {
     text-decoration: none;
 }
-
 
 
 .img-port:hover {
@@ -382,6 +401,8 @@ section.projetos .flex {
     color: #fff;
     opacity: 0;
     transition: .5s;
+
+
 }
 
 .overlay:hover {
