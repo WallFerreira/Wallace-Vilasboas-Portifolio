@@ -1,46 +1,47 @@
-window.revelar = ScrollReveal({ reset: true });
+window.revelar = ScrollReveal({ reset: true })
 
 // TOPO DO SITE ========================================================
 
 revelar.reveal(".efeito-txt-topo", {
   duration: 2000,
   distance: "90px",
-});
+})
 
 revelar.reveal(".efeito-img-topo", {
   duration: 2000,
   distance: "90px",
   delay: 500,
-});
+})
 
 // TITULO DAS SEÇÕES ========================================================
 
 revelar.reveal(".titulo", {
   duration: 2000,
   distance: "90px",
-});
+})
 
 // ESPECIALIDADES ========================================================
 
 revelar.reveal(".efeito-especialidades1", {
-  duration: 2000,
+  duration: 1200,
   distance: "90px",
+  origin: "right",
   delay: 500,
-  origin: "left",
-});
+})
 
 revelar.reveal(".efeito-especialidades2", {
-  duration: 2000,
+  duration: 1200,
   distance: "90px",
-  delay: 1000,
-});
+  delay: 500,
+  origin: "right",
+})
 
 revelar.reveal(".efeito-especialidades3", {
-  duration: 2000,
+  duration: 1200,
   distance: "90px",
-  delay: 1500,
   origin: "right",
-});
+  delay: 500,
+})
 
 // SOBRE ========================================================
 
@@ -49,14 +50,14 @@ revelar.reveal(".img-sobre", {
   distance: "90px",
   origin: "left",
   delay: 500,
-});
+})
 
 revelar.reveal(".txt-sobre", {
   duration: 2000,
   distance: "90px",
   origin: "right",
   delay: 1000,
-});
+})
 
 // PROJETOS ========================================================
 
@@ -64,22 +65,22 @@ revelar.reveal(".projeto1", {
   duration: 2000,
   distance: "90px",
   origin: "left",
-  delay: 500,
-});
+  // delay: 500,
+})
 
 revelar.reveal(".projeto2", {
   duration: 2000,
   distance: "90px",
   origin: "left",
-  delay: 1000,
-});
+  // delay: 1000,
+})
 
 revelar.reveal(".projeto3", {
   duration: 2000,
   distance: "90px",
   origin: "left",
-  delay: 500,
-});
+  // delay: 500,
+})
 
 // FORMULÁRIO ========================================================
 
@@ -87,36 +88,32 @@ revelar.reveal(".input-nome", {
   duration: 2000,
   distance: "90px",
   delay: 500,
-});
+})
 
 revelar.reveal(".input-email", {
   duration: 2000,
   distance: "90px",
-  delay: 1000,
-});
+  delay: 700,
+})
 
 revelar.reveal(".input-celular", {
   duration: 2000,
   distance: "90px",
-  delay: 1500,
-});
+  delay: 900,
+})
 
 revelar.reveal(".text-area", {
   duration: 2000,
   distance: "90px",
-  delay: 2000,
+  delay: 1200,
   rotate: {
     x: 0,
     z: 180,
   },
-});
+})
 
 revelar.reveal(".btn-enviar", {
   duration: 2000,
   distance: "90px",
-  delay: 2500,
-  rotate: {
-    x: 0,
-    y: 180,
-  },
-});
+  delay: 1500,
+})

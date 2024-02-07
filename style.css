@@ -267,6 +267,9 @@ section.especialidades .flex {
     border-radius: 20px;
     transition: .2s;
 
+    @media(max-width: 1236px) {
+        transition: none
+    }
 
 }
 
@@ -276,7 +279,6 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box img {
-
     width: 150px;
 }
 
@@ -336,6 +338,7 @@ section.projetos {
     margin-top: 180px;
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff17;
+    display: flex;
 }
 
 section.projetos .flex {
@@ -347,7 +350,7 @@ section.projetos .flex {
     grid-auto-rows: minmax(100px, auto);
 
     @media(max-width: 1236px) {
-
+        gap: 10px;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: minmax(100px, auto);
     }
@@ -359,7 +362,6 @@ section.projetos .flex {
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 6s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
@@ -368,10 +370,18 @@ section.projetos .flex {
     align-self: center;
     background-position: center;
 
-    @media(max-width: 1236px) {
+    @media screen and (max-width: 1236px) {
+
+        width: 236px;
+        height: 346px;
+        border-radius: 40px;
+
+        transition: 1s;
 
         background-position: 100% 0%;
-        transition: 1s;
+        justify-content: center;
+        align-self: center;
+        background-position: 100%
     }
 
 }
@@ -571,12 +581,13 @@ footer .line-footer p a {
     /* ESPECIALIDADES */
 
     section.especialidades {
-        padding: 40px 8%;
-        margin-bottom: 60px;
+        padding: 1rem 8%;
+        margin-bottom: 50px;
+
     }
 
     .especialidades .especialidades-box {
-        margin-top: 20px;
+        margin-top: 1rem;
     }
 
     /* SOBRE */
